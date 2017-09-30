@@ -22,7 +22,7 @@ The output should be:  “b1, f1, b3, f3,c4, e4"
 ## My Implementation
 All of the above requirements were met. In addition, I implemented King and Bishop. I did not implement Pawn because that requires knowing the color of the piece to generate possible moves. Also, because the code has no history of moves I did not implement Castling for the King.
 
-The parameters are case insensitive and the relative position of the -piece and -position parameters does not matter. Entering an invalid parameter will cause an error message which displays the offending parameter. Entering an unimplemented piece (currently Pawn only) will display am message explaining that the piece is not implemented.
+The parameters are case insensitive and the relative position of the -piece and -position parameters does not matter. Entering an invalid parameter will cause an error message which displays the offending parameter. Entering an unimplemented piece (currently Pawn only) will display a message explaining that the piece is not implemented.
 All error messages are followed by a Usage description.
 
 I received permission to use the PHPUnit framework for the unit tests. However, after further reflection I decided it would be simpler for others to run the tests if there were no additional frameworks to install. So I created a simple unit testing class loosely based on the functionality of PHPUnit. I believe that I have provided reasonably thorough unit test coverage of the code.
@@ -37,7 +37,7 @@ To install the program:
 
 To run the program:
 ```
-./chessercise.php -
+./chessercise.php -piece <piece_name> -position <algebraic_starting_position>
 ```
 To run the unit tests:
 ```
