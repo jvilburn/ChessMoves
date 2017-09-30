@@ -32,7 +32,7 @@ class Knight extends ChessPiece
         if ( ChessBoard::isValidPosition($this->x-2, $this->y-1) ) {
             $this->addMove($this->x-2,$this->y-1);
         }
-        return $this->moves;
+        return $this->moves();
     }
 }
 

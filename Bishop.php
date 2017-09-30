@@ -22,7 +22,7 @@ class Bishop extends ChessPiece
                 }
             }
         }
-        return $this->moves;
+        return $this->moves();
     }
 }
     

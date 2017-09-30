@@ -34,7 +34,7 @@ class Queen extends ChessPiece
                 }
             }
         }
-        return $this->moves;
+        return $this->moves();
     }
 }
     

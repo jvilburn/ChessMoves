@@ -17,7 +17,7 @@ class Rook extends ChessPiece
                 $this->addMove($this->x, $ypos);
             }
         }
-        return $this->moves;
+        return $this->moves();
     }
 }
     
